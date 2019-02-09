@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>CSS</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+  crossorigin="anonymous">
+  <!-- <link rel="stylesheet" type="text/css" media="screen" href="style.css" /> -->
+  <script src="main.js"></script>
+</head>
+<body>
+  
+    <button class="mt-5 ml-5"><a href="index.html">Home</a></button>
+<div class="container">
+
+<h1 class="my-5">Styling your webpage with CSS</h1>
+<h4>Think of it like a house; if HTML is the frame, CSS would be the paint you would decorate your house with.
+
+You can change the appearance, size, and behavior of your HTML elements.</h4>
+
+<h5 class="my-3">CSS can change:</h5>
+<ul>
+<li>Size</li>
+<li>Shape</li>
+<li>Color</li>
+<li>Text enhancements like underlining</li>
+<li>Font type</li>
+<li>Position of elements on page</li>
+<li>Even basic animations</li>
+</ul>
+
+<h2>CSS Positioning</h2>
+<ul>
+  <li><strong>Static: </strong>An HTML element's default position is called 'static', which means that it is not positioned in any special way. It is always positioned according to the normal flow of the page.</li>
+
+  <li><strong>Relative: </strong>Elements' position can be 'relative'. This means that the element's location on the page is ‘relative’ to the entire page (or window).</li>
+
+  <li><strong>Absolute: </strong>If an element has a position of 'absolute', it means that the element is positioned ‘relative’ to another element.</li>
+
+  <li><strong>Fixed: </strong>Elements can be fixed as well, which means that even if other elements are added to the page that would normally move them around, they will stay in the same spot.</li>
+</ul>
+
+<h2>CSS Selectors</h2>
+
+
+<h3>Element:</h3>
+<xmp><p>This is my awesome paragraph.</p></xmp>
+
+<p>Here is the CSS:</p>
+
+<xmp>
+    p {
+      color: red;
+      font-size: 24px;
+    }
+
+</xmp>
+
+<p>Which changes the appearance of the element to this:</p>
+
+<p class="styled">This is my awesome paragraph.</p>
+
+<p>Note: There are many other selectors available which we will delve into later in the course.</p>
+
+
+<h2>Colors</h2>
+<h5 style="font-style: italic;">You can use typical color names in CSS (i.e. color: blue;) but professionals generally use either rgba or Hexadecimal colors.</h5>
+
+<h3 class="my-3">rgba colors</h3>
+<a href="https://www.w3schools.com/cssref/func_rgba.asp">Info on rgba</a>
+
+<h3 class="my-3">Hexadecimal colors</h3>
+
+<a href="https://www.w3schools.com/colors/colors_hexadecimal.asp">Hexadecimal colors</a>
+
+<h3 class="my-4">Changing text color in multiple ways:</h3>
+<div class="row d-flex justify-content-center">
+
+<div class="col">
+  <xmp><p>Est enim commodo labore est exercitation labore id Lorem.</p></xmp>
+    <xmp> p {
+            color: purple;
+            // purple in standard format
+          }
+    </xmp>
+
+    <p class="plain-name">Est enim commodo labore est exercitation labore id Lorem.</p>
+
+</div>
+<div class="col">
+    <xmp><p>Est enim commodo labore est exercitation labore id Lorem.</p></xmp>
+      <xmp> p {
+              color: rgba(128, 0, 128, 1);
+              // purple in rgba format
+            }
+  </xmp>
+
+  <p class="rgba-color">Est enim commodo labore est exercitation labore id Lorem. 
+  </p>
+  </div>
+
+  <div class="col">
+      <xmp><p>Est enim commodo labore est exercitation labore id Lorem. 
+       </p></xmp>
+        <xmp> p {
+                color: #800080;
+                // purple in hexadecimal format
+              }
+    </xmp>
+
+    <p class="hexadecimal-color">Est enim commodo labore est exercitation labore id Lorem. 
+       </p>
+    </div>
+    </div>
+
+
+<div class="row mb-5">
+  <div class="col-lg-8" style="margin: 0 auto;">
+        
+<h3 class="my-3" style="text-decoration: underline;">Comments</h3>
+
+<p>Often you will want to put comments in your files. These can explain what your code is doing
+  so that anyone else who works in the codebase understand what is going on.</p>
+  <p></p>
+ <p>Comments are not visible on your web page. The browser ignores them.</p>
+ <h4><xmp>/* CSS comments look like this  */</xmp></h4>
+</div>
+</div>
+</div>
+
+<style>
+
+  body {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+  }
+
+  button {
+    padding: 12px 30px;
+    background: purple;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    display: block;   
+  }
+
+  a {
+    color: white;
+    transition: all ease-in 0.2s;
+  }
+  
+  a:active, a:hover {
+    text-decoration: none;
+    color: gray;
+  }
+  .styled {
+    color: red;
+    font-size: 24px;
+  }
+
+h2 {
+  text-decoration: underline;
+  padding: 20px 0;
+}
+
+  ul {
+    text-align: left;
+    list-style: none;
+  }
+
+  .plain-name {
+    color: purple;
+  }
+
+  .rgba-color {
+    color: rgb(128,0,128, 1);
+  }
+
+  .hexadecimal-color {
+    color: #800080;
+  }
+
+  li {
+    padding: 10px 0;
+  }
+
+ 
+</style>
+</body>
+</html>

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>HTML</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP"
+    crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400" rel="stylesheet">
+  <script src="main.js"></script>
+</head>
+
+<body>
+  <button class="mt-5 ml-5"><a href="index.html">Home</a></button>
+  <div class="container mb-5">
+    <h1 class="my-4">HTML - Hypertext Markup Language</h1>
+    <h3 class="col-lg-10 my-5 mx-auto">Think of HTML as the 'frame of a house. It contains all of the text, images, and other visible
+      elements on a web page.</h3>
+
+      <div class="row d-flex justify-content-center">
+
+      <div class="card" style="width: 75%;">
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item"><xmp> <h1>Heading</h1></xmp><h1>Heading</h1></li>
+            <li class="list-group-item"><xmp><h2>Heading</h2></xmp><h2>Heading</h2></li>
+            <li class="list-group-item"><xmp><h3>Heading</h3></xmp><h3>Heading</h3></li>
+            <li class="list-group-item"><xmp><h4>Heading</h4></xmp><h4>Heading</h4></li>
+            <li class="list-group-item"><xmp><h5>Heading</h5></xmp><h5>Heading</h5></li>
+            <li class="list-group-item"><xmp><h6>Heading</h6></xmp><h6>Heading</h6></li>
+            <li class="list-group-item"><xmp><p>Amet laborum proident esse mollit labore ex Lorem
+occaecat excepteur ipsum est elit irure dolore.</p></xmp>  <p>Amet laborum proident esse mollit labore ex Lorem occaecat
+                                        excepteur ipsum est elit irure dolore.</p></li>
+          </ul>
+        </div>
+
+     
+        </div>
+
+
+    <!-- 
+     
+          
+      
+     
+     -->
+
+    <div class="col-lg-6 mx-auto border-boxes">
+
+      <h4><a href="http://www.simplehtmlguide.com/cheatsheet.php">Click here for a list of common HTML Tags</h4></a>
+    </div>
+<div class="col-lg-10 mx-auto mb-5">
+    <div class="card">
+        <div class="card-header">
+        <h4>Anchor Tags</h4>
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">The tag below is known as an 'anchor' tag and creates a link to another page.</h5>
+          <p class="card-text"><xmp><button><a href="https://google.com">Go to Google</a></button></xmp></p>
+          <a href="https://google.com" class="btn btn-primary">Go to Google</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-10 mx-auto mt-5">
+        <div class="card my-5">           
+            <div class="card-header">
+            <h4>Images</h4>
+            </div>
+            <div class="card-body">
+            <img style="width: 300px; height: 350px; margin-bottom: 20px;" src="https://images.unsplash.com/photo-1535083783855-76ae62b2914e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"" class="card-img-top mx-auto" alt="...">
+            <h5 class="card-title">Image tags allow you to put pictures on your page.</h5>
+            <p class="card-text"><strong><xmp class="link-text"><img src="https://images.unsplash.com/photo..." /></xmp></strong></p>
+            <p class="card-text">The 'src' is another HTML <strong>attribute</strong> and tells the browser where to access the
+              image.</p>
+          
+            </div>
+          </div>
+        </div>    
+  </div>
+
+  <style>
+    body {
+      font-family: 'Montserrat', sans-serif;
+      text-align: center;
+    }
+
+    h1,
+    h3,
+    h4,
+    xmp,
+    ul,
+    .images {
+      text-align: center;
+      list-style-type: none;
+    }
+
+
+
+    xmp {
+      font-size: 20px;
+    }
+
+
+    img {
+      width: 300px;
+      height: 400px;
+    }
+
+    .link-text {
+      font-size: 18px;
+    }
+
+    span {
+      font-style: italic;
+    }
+
+    button {
+      padding: 12px 30px;
+      background: purple;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      display: block;
+    }
+
+    a {
+      /* color: white; */
+      transition: all ease-in 0.2s;
+      text-decoration: none;
+      color: purple;
+    }
+
+
+
+    a:active,
+    a:hover {
+      text-decoration: none;
+      color: gray;
+    }
+
+    .border-boxes {
+
+      border-radius: 5px;
+      margin: 30px 0 50px 0;
+      padding: 60px 0;
+      font-style: italic;
+      text-decoration: none !important;
+      box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+    }
+
+   
+
+  </style>
+</body>
+
+</html>
