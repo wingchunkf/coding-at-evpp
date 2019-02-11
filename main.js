@@ -1,42 +1,84 @@
+// let scrolling = false;
+// let navHeader = document.querySelector('.nav-header');
+// let links = document.querySelectorAll('.main-nav');
+// let home_link = document.getElementById('home');
+// let first_link = document.getElementById('link1');
+// let second_link = document.getElementById('link2');
+// let contact_link = document.querySelector('contact');
+// let register_link = document.querySelector('.register-link');
+
+// window.onscroll = function () {
+
+//   console.log('scrolling');
+//   navHeader.style.backgroundColor = "#2b5184";
+//   navHeader.classList.add('animated', 'slideInDown');
+//   register_link.style.backgroundColor = "white";
+//   // home_link.style.color = "white";
+//   first_link.style.color = 'white';
+//   second_link.style.color = 'white';
+//   navHeader.classList.add('animated');
+//   navHeader.classList.add('slideInDown');
+
+//   register_link.style.color = "#2b5184";
+// };
+
+// $(window).scroll(function () {
+//   if ($(this).scrollTop() === 0) {
+//     navHeader.classList.add('animated', 'slideInDown');
+//     // navHeader.classList.add('slideInDown');
+//     navHeader.style.backgroundColor = "white";
+//     // home_link.style.color = "#2b5184";
+//     first_link.style.color = "#2b5184";
+//     second_link.style.color = "#2b5184";
+//     register_link.style.backgroundColor = "#2b5184";
+//     register_link.style.color = 'white';
+ 
+//     navHeader.style.transition = "3s";
+//     console.log('hey')
+//   }
+// });
+
 let scrolling = false;
 let navHeader = document.querySelector('.nav-header');
 let links = document.querySelectorAll('.main-nav');
 let home_link = document.getElementById('home');
+let nav_links = document.querySelector('.dropdown-toggle');
 let first_link = document.getElementById('link1');
 let second_link = document.getElementById('link2');
 let contact_link = document.querySelector('contact');
 let register_link = document.querySelector('.register-link');
 
-window.onscroll = function () {
-
-  console.log('scrolling');
-  navHeader.style.backgroundColor = "#2b5184";
-  navHeader.classList.add('animated', 'slideInDown');
-  register_link.style.backgroundColor = "white";
-  // home_link.style.color = "white";
-  first_link.style.color = 'white';
-  second_link.style.color = 'white';
-  navHeader.classList.add('animated');
-  navHeader.classList.add('slideInDown');
-
-  register_link.style.color = "#2b5184";
-};
-
 $(window).scroll(function () {
   if ($(this).scrollTop() === 0) {
     navHeader.classList.add('animated', 'slideInDown');
-    // navHeader.classList.add('slideInDown');
-    navHeader.style.backgroundColor = "white";
-    // home_link.style.color = "#2b5184";
-    first_link.style.color = "#2b5184";
-    second_link.style.color = "#2b5184";
-    register_link.style.backgroundColor = "#2b5184";
-    register_link.style.color = 'white';
- 
+    navHeader.classList.remove('footer-bg')
+   
+    navHeader.style.backgroundColor = "white"; 
+    second_link.style.color = "#857e78";
+    register_link.style.backgroundColor = "#857e78";
+    register_link.style.color = 'white'; 
     navHeader.style.transition = "3s";
     console.log('hey')
   }
 });
+
+window.onscroll = function () {
+
+  console.log('scrolling');
+  navHeader.style.backgroundColor = "#857e78";
+  navHeader.style.transition = "1s";
+  navHeader.classList.add('footer-bg');
+  navHeader.classList.add('animated', 'slideInDown');
+ 
+  // register_link.style.backgroundColor = "white";
+  // home_link.style.color = "white";
+  first_link.style.color = 'white';
+  nav_links.style.color = 'white'
+  second_link.style.color = 'white';
+
+
+  register_link.style.color = "#5398be";
+};
 
 // user clicks on Login button in navbar. Text is removed and login/registration boxes appear
 
