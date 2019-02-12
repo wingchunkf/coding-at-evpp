@@ -1,6 +1,7 @@
 let scrolling = false;
 let navHeader = document.querySelector('.nav-header');
 let link = document.querySelectorAll('.main-nav');
+let myHeader = document.querySelector('.header');
 let home_link = document.getElementById('home');
 let nav_links = document.querySelector('.dropdown-toggle');
 let first_link = document.getElementById('link1');
@@ -17,7 +18,7 @@ window.onscroll = function () {
     navHeader.style.transition = "1.5s";
     console.log('hey')
   } else {
-  console.log('scrolling');
+  console.log('scrolling');  
   navHeader.style.backgroundColor = "#999";
   navHeader.style.color = "white";
   navHeader.style.transition = "0.5s";

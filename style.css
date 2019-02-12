@@ -242,10 +242,10 @@ hr {
   width: 40%;
 }
 
-.copyright p {
+p .copyright {
   text-align: center;
   font-size: 14px;
-  padding-top: 2rem;
+  padding-top: 2rem !important;
 }
 
 .no-padding {
