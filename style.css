@@ -209,7 +209,7 @@ footer {
   background-color: #857e7b;
   background-image: url("https://www.transparenttextures.com/patterns/dark-leather.png");
   color: white;
-  height: 14.5rem;
+  height: 8rem;
   text-align: center;
   margin-bottom: 0 !important;
   padding-bottom: 0 !important;
@@ -242,9 +242,10 @@ hr {
   width: 40%;
 }
 
-.copyright {
+.copyright p {
   text-align: center;
   font-size: 14px;
+  padding-top: 2rem;
 }
 
 .no-padding {
@@ -321,9 +322,6 @@ a.mapboxgl-ctrl-logo {
 /* property image */
 
 
-
-
-
 .goal-text {
   padding-top: 10px;
   max-height: 210px;
@@ -353,7 +351,33 @@ a.mapboxgl-ctrl-logo {
   margin-top: 5.5rem;
 }
 
+.main-content {
+  width: 80%;
+  height: 600px;
+  overflow: hidden;
+  margin: 3rem auto 3rem auto;
+}
 
+.code .html-shot {
+  transform: translateY(-30%);
+}
+
+.sample-page {
+  width: 70%; 
+}
+
+/* media queries */
+@media screen and (max-width: 1024px) {
+.goal-text {
+  font-size: 14px;
+ }
+}
+
+@media screen and (max-width: 425px) {
+  .goal {
+    display: none;
+  }
+}
 
 
 

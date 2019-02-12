@@ -1,5 +1,5 @@
 body {
-  text-align: center;
+  text-align: center;  
 }
 
 header > ul {
@@ -30,6 +30,11 @@ h3 {
 .left-img, .center-img, .right-img {
   width: 30%;
   height: 350px;
+  transition: all 0.2s ease-in-out;
+}
+
+.left-img:hover, .center-img:hover, .right-img:hover {
+  transform: scale(1.2);
 }
 
 .img-text {
