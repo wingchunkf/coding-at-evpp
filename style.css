@@ -379,6 +379,76 @@ a.mapboxgl-ctrl-logo {
   }
 }
 
+body {
+  text-align: center;  
+}
+
+/* css for sample page */
+
+header > ul {
+  margin-top: 20px;
+}
+
+.nav-links li {
+  display: inline-block;
+  margin: 20px 150px;
+
+}
+
+h1 {
+  padding: 25px 0;
+}
+
+h3 {
+  padding: 30px 0;
+}
+
+.images {
+  padding: 25px 0;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+
+.left-img, .center-img, .right-img {
+  width: 30%;
+  height: 350px;
+  transition: all 0.4s ease-in;
+}
+
+.left-img:hover, .center-img:hover, .right-img:hover {
+  transform: scale(1.15);
+  box-shadow: 4px 6px 12px #999;
+  
+}
+
+.img-text {
+  width: 60%;
+  margin: 0 auto;
+}
+
+li {
+  display: block;
+}
+
+.list1, .list2, .list3 {  
+  display: inline-block;
+}
+
+.martial-arts ul > li {
+  padding: 5px 20px;
+}
+
+span {
+  font-style: italic;
+}
+
+.donnie {
+  color: #999;
+}
+
+
+
 
 
 
